@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Dine - Book a Table</title>
+
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="shortcut icon" href="/public/favicon.ico" type="image/x-icon" />
+
+    <script src="/script.js" defer></script>
+  </head>
+  <body>
+    <header class="wrapper header booking-header">
+      <a href="/">
+        <img
+          src="/public/logo.svg"
+          alt="Homepage - Dine"
+          width="103"
+          height="40"
+          class="logo" />
+      </a>
+    </header>
+
+    <main>
+      <section class="wrapper booking-hero">
+        <picture class="full-width image">
+          <source
+            media="(width >= calc(1024 / 16 * 1em))"
+            srcset="/images/booking/hero-bg-desktop@2x.jpg"
+            width="2880"
+            height="1640" />
+          <source
+            media="(width >= calc(768 / 16 * 1em))"
+            srcset="/images/booking/hero-bg-tablet@2x.jpg"
+            width="1536"
+            height="1984" />
+          <img
+            src="/images/booking/hero-bg-mobile@2x.jpg"
+            alt="Elegant dining setup"
+            width="750"
+            height="1496" />
+        </picture>
+
+        <h1 class="title">Reservations</h1>
+
+        <p class="description">
+          We can't wait to host you. If you have any special requirements please
+          feel free to call on the phone number below. We'll be happy to
+          accommodate you.
+        </p>
+      </section>
+
+      <section class="wrapper booking-form">
+        <form id="reservation-form">
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="name" class="visually-hidden">Name</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Name"
+                required
+                autocomplete="name"
+                aria-required="true" />
+              <div class="error-message" id="name-error"></div>
+            </div>
+
+            <div class="form-group">
+              <label for="email" class="visually-hidden">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Email"
+                autocomplete="email"
+                required
+                aria-required="true" />
+              <div class="error-message" id="email-error"></div>
+            </div>
+
+            <div class="form-date-time">
+              <h3>Pick a date</h3>
+
+              <div class="form-date">
+                <div class="form-group">
+                  <label for="day" class="visually-hidden">Day</label>
+                  <div class="select-wrapper">
+                    <select id="day" name="day" required aria-required="true">
+                      <option value="" disabled selected>DD</option>
+                      <option value="01">01</option>
+                      <option value="02">02</option>
+                      <option value="03">03</option>
+                      <option value="04">04</option>
+                      <option value="05">05</option>
+                      <option value="06">06</option>
+                      <option value="07">07</option>
+                      <option value="08">08</option>
+                      <option value="09">09</option>
+                      <option value="10">10</option>
+                      <option value="11">11</option>
+                      <option value="12">12</option>
+                      <option value="13">13</option>
+                      <option value="14">14</option>
+                      <option value="15">15</option>
+                      <option value="16">16</option>
+                      <option value="17">17</option>
+                      <option value="18">18</option>
+                      <option value="19">19</option>
+                      <option value="20">20</option>
+                      <option value="21">21</option>
+                      <option value="22">22</option>
+                      <option value="23">23</option>
+                      <option value="24">24</option>
+                      <option value="25">25</option>
+                      <option value="26">26</option>
+                      <option value="27">27</option>
+                      <option value="28">28</option>
+                      <option value="29">29</option>
+                      <option value="30">30</option>
+                      <option value="31">31</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="month" class="visually-hidden">Month</label>
+                  <div class="select-wrapper">
+                    <select
+                      id="month"
+                      name="month"
+                      required
+                      aria-required="true">
+                      <option value="" disabled selected>MM</option>
+                      <option value="01">01</option>
+                      <option value="02">02</option>
+                      <option value="03">03</option>
+                      <option value="04">04</option>
+                      <option value="05">05</option>
+                      <option value="06">06</option>
+                      <option value="07">07</option>
+                      <option value="08">08</option>
+                      <option value="09">09</option>
+                      <option value="10">10</option>
+                      <option value="11">11</option>
+                      <option value="12">12</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="year" class="visually-hidden">Year</label>
+                  <div class="select-wrapper">
+                    <select id="year" name="year" required aria-required="true">
+                      <option value="" disabled selected>YYYY</option>
+                      <option value="2025">2025</option>
+                      <option value="2026">2026</option>
+                      <option value="2027">2027</option>
+                      <option value="2028">2028</option>
+                      <option value="2029">2029</option>
+                      <option value="2030">2030</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="error-message" id="date-error"></div>
+            </div>
+
+            <div class="form-date-time">
+              <h3>Pick a time</h3>
+
+              <div class="form-time">
+                <div class="form-group">
+                  <label for="hour" class="visually-hidden">Hour</label>
+                  <div class="select-wrapper">
+                    <select id="hour" name="hour" required aria-required="true">
+                      <option value="" disabled selected>HH</option>
+                      <option value="09">09</option>
+                      <option value="10">10</option>
+                      <option value="11">11</option>
+                      <option value="12">12</option>
+                      <option value="13">13</option>
+                      <option value="14">14</option>
+                      <option value="15">15</option>
+                      <option value="16">16</option>
+                      <option value="17">17</option>
+                      <option value="18">18</option>
+                      <option value="19">19</option>
+                      <option value="20">20</option>
+                      <option value="21">21</option>
+                      <option value="22">22</option>
+                      <option value="23">23</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="minute" class="visually-hidden">Minute</label>
+                  <div class="select-wrapper">
+                    <select
+                      id="minute"
+                      name="minute"
+                      required
+                      aria-required="true">
+                      <option value="" disabled selected>MM</option>
+                      <option value="00">00</option>
+                      <option value="15">15</option>
+                      <option value="30">30</option>
+                      <option value="45">45</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <div class="select-wrapper time-am-pm">
+                    <select id="ampm" name="ampm" required aria-required="true">
+                      <option value="am">AM</option>
+                      <option value="pm">PM</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="error-message" id="time-error"></div>
+            </div>
+
+            <div class="form-people">
+              <div class="people-control">
+                <button
+                  type="button"
+                  class="counter-button minus"
+                  aria-label="Decrease people count">
+                  <img
+                    src="/assets/icons/icon-minus.svg"
+                    alt=""
+                    width="7"
+                    height="3" />
+                </button>
+                <span id="people-count">4 people</span>
+                <button
+                  type="button"
+                  class="counter-button plus"
+                  aria-label="Increase people count">
+                  <img
+                    src="/assets/icons/icon-plus.svg"
+                    alt=""
+                    width="7"
+                    height="7" />
+                </button>
+              </div>
+              <input type="hidden" id="people" name="people" value="4" />
+            </div>
+
+            <button type="submit" class="button reservation-button">
+              Make Reservation
+            </button>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <footer class="wrapper footer">
+      <a href="/">
+        <img
+          src="/public/logo.svg"
+          alt="Homepage - Dine"
+          width="103"
+          height="40"
+          class="logo" />
+      </a>
+
+      <div class="text-content">
+        <address class="location">
+          <p>Çetinyürek sk. No:42</p>
+          <p>Kadıköy, Istanbul</p>
+          <a href="tel:+902165553344">+90 216 555 33 44</a>
+        </address>
+
+        <time class="times">
+          <p>Open Times</p>
+          <p>Mon - Fri: 09 am - 10pm</p>
+          <p>Sat - Sun: 10 am - 11pm</p>
+        </time>
+      </div>
+
+      <div class="copyright">
+        Copyright
+        <span id="date"></span>
+        © All right reserved. Powered by
+        <a href="https://www.burakbilgili.co.uk/" target="_blank">
+          Burak Bilgili
+        </a>
+      </div>
+    </footer>
+  </body>
+</html>

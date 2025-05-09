@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Dine - Exquisite Dining</title>
+
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="shortcut icon" href="/public/favicon.ico" type="image/x-icon" />
+
+    <script src="/script.js" defer></script>
+  </head>
+  <body>
+    <header class="wrapper header">
+      <a href="/">
+        <img
+          src="/public/logo.svg"
+          alt="Homepage - Dine"
+          width="103"
+          height="40"
+          class="logo" />
+      </a>
+    </header>
+
+    <main>
+      <section class="wrapper hero">
+        <picture class="full-width image">
+          <source
+            media="(width >= calc(1024 / 16 * 1em))"
+            srcset="/images/homepage/hero-bg-desktop@2x.jpg"
+            width="2880"
+            height="1640" />
+          <source
+            media="(width >= calc(768 / 16 * 1em))"
+            srcset="/images/homepage/hero-bg-tablet@2x.jpg"
+            width="1536"
+            height="1984" />
+          <img
+            src="/images/homepage/hero-bg-mobile@2x.jpg"
+            alt="Plate with shrimp spaghetti"
+            width="750"
+            height="1496" />
+        </picture>
+
+        <h1 class="title">Exquisite dining since 1989</h1>
+
+        <p class="description">
+          Experience our seasonal menu in beautiful country surroundings. Eat
+          the freshest produce from the comfort of our farmhouse.
+        </p>
+
+        <a href="/booking.html" class="button">Book a Table</a>
+      </section>
+
+      <section class="wrapper features">
+        <div class="feature">
+          <img
+            src="/assets/patterns/pattern-curve-top-right.svg"
+            alt=""
+            width="895"
+            height="320"
+            class="hidden-on-mobile pattern" />
+
+          <picture>
+            <source
+              media="(width >= calc(1024 / 16 * 1em))"
+              srcset="/images/homepage/locally-sourced-desktop@2x.jpg"
+              width="1080"
+              height="1440" />
+            <source
+              media="(width >= calc(768 / 16 * 1em))"
+              srcset="/images/homepage/enjoyable-place-tablet@2x.jpg"
+              width="1146"
+              height="720" />
+            <img
+              src="/images/homepage/enjoyable-place-mobile@2x.jpg"
+              alt="Landscape with sheep"
+              width="654"
+              height="800"
+              class="image shadow" />
+          </picture>
+
+          <div class="text-content">
+            <img
+              src="/assets/patterns/pattern-divide.svg"
+              alt=""
+              width="71"
+              height="7"
+              class="divider" />
+
+            <h2 class="title">Enjoyable place for all the family</h2>
+
+            <p class="description">
+              Our relaxed surroundings make dining with us a great experience
+              for everyone. We can even arrange a tour of farm before your meal.
+            </p>
+          </div>
+        </div>
+        <div class="feature">
+          <img
+            src="/assets/patterns/pattern-curve-top-left.svg"
+            alt=""
+            width="895"
+            height="320"
+            class="hidden-on-mobile pattern" />
+
+          <picture>
+            <source
+              media="(width >= calc(1024 / 16 * 1em))"
+              srcset="/images/homepage/locally-sourced-desktop@2x.jpg"
+              width="1080"
+              height="1440" />
+            <source
+              media="(width >= calc(768 / 16 * 1em))"
+              srcset="/images/homepage/locally-sourced-tablet@2x.jpg"
+              width="1146"
+              height="720" />
+            <img
+              src="/images/homepage/locally-sourced-mobile@2x.jpg"
+              alt="Hand with spoon over a plate of local food"
+              width="654"
+              height="800"
+              class="image shadow" />
+          </picture>
+
+          <img
+            src="/assets/patterns/pattern-lines.svg"
+            alt=""
+            width="160"
+            height="76"
+            class="lines hidden-on-mobile" />
+
+          <div class="text-content">
+            <img
+              src="/assets/patterns/pattern-divide.svg"
+              alt=""
+              width="71"
+              height="7"
+              class="divider" />
+
+            <h2 class="title">The most locally sourced food</h2>
+
+            <p class="description">
+              All our ingredients come directly from our farm or local fishery.
+              So you can be sure that you're eating the freshest, most
+              sustainable food.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="wrapper highlights">
+        <div class="content">
+          <div class="text-content">
+            <img
+              src="/assets/patterns/pattern-divide.svg"
+              alt=""
+              width="71"
+              height="7"
+              class="divider" />
+
+            <h2 class="title">A few highlights from our menu</h2>
+
+            <p class="description">
+              We cater for all dietary requirements, but here's a glimpse at
+              some of our diner's favorites. Our menu is revamped every season.
+            </p>
+          </div>
+          <div class="items">
+            <div class="item">
+              <div class="item-decorative hidden-on-mobile"></div>
+              <picture class="item-image">
+                <source
+                  media="(width >= calc(768/16 *1em))"
+                  srcset="/images/homepage/salmon-desktop-tablet@2x.jpg"
+                  width="256"
+                  height="192" />
+                <img
+                  src="/images/homepage/salmon-mobile@2x.jpg"
+                  alt="Salmon fillet on plate on bed of rice"
+                  width="654"
+                  height="490" />
+              </picture>
+
+              <div class="item-text-content">
+                <h3 class="item-title">Seared Salmon Fillet</h3>
+
+                <p class="item-description">
+                  Our locally sourced salmon served with a refreshing buckwheat
+                  summer salad.
+                </p>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="item-decorative hidden-on-mobile"></div>
+              <picture class="item-image">
+                <source
+                  media="(width >= calc(768/16 *1em))"
+                  srcset="/images/homepage/beef-desktop-tablet@2x.jpg"
+                  width="256"
+                  height="192" />
+                <img
+                  src="/images/homepage/beef-mobile@2x.jpg"
+                  alt="Filet mignon on plate with rosemary sprig and fork"
+                  width="654"
+                  height="490" />
+              </picture>
+
+              <div class="item-text-content">
+                <h3 class="item-title">Rosemary Filet Mignon</h3>
+
+                <p class="item-description">
+                  Our prime beef served to your taste with a delicious choice of
+                  seasonal sides.
+                </p>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="item-decorative hidden-on-mobile"></div>
+              <picture class="item-image">
+                <source
+                  media="(width >= calc(768/16 *1em))"
+                  srcset="/images/homepage/chocolate-desktop-tablet@2x.jpg"
+                  width="256"
+                  height="192" />
+                <img
+                  src="/images/homepage/chocolate-mobile@2x.jpg"
+                  alt="Chocolate mousse with pomegranate"
+                  width="654"
+                  height="490" />
+              </picture>
+
+              <div class="item-text-content">
+                <h3 class="item-title">Summer Fruit Chocolate Mousse</h3>
+
+                <p class="item-description">
+                  Creamy mousse combined with summer fruits and dark chocolate
+                  shavings.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="wrapper booking">
+        <h2 class="visually-hidden">Booking</h2>
+
+        <img
+          src="/assets/patterns/pattern-curve-top-right.svg"
+          alt=""
+          width="895"
+          height="320"
+          class="hidden-on-mobile pattern" />
+
+        <div role="tablist" aria-label="Sample Tabs" class="tablist">
+          <button
+            role="tab"
+            aria-selected="true"
+            aria-controls="panel-1"
+            id="tab-1"
+            tabindex="0"
+            class="tab">
+            Family Gathering
+          </button>
+
+          <button
+            role="tab"
+            aria-selected="false"
+            aria-controls="panel-2"
+            id="tab-2"
+            tabindex="0"
+            class="tab">
+            Special Events
+          </button>
+
+          <button
+            role="tab"
+            aria-selected="false"
+            aria-controls="panel-3"
+            id="tab-3"
+            tabindex="0"
+            class="tab">
+            Social Events
+          </button>
+        </div>
+
+        <div
+          id="panel-1"
+          role="tabpanel"
+          tabindex="0"
+          aria-labelledby="tab-1"
+          class="tabpanel">
+          <div class="tab-content">
+            <picture>
+              <source
+                media="(width >= calc(1024/16 *1em))"
+                srcset="/images/homepage/family-gathering-desktop@2x.jpg"
+                width="1080"
+                height="1200" />
+              <source
+                media="(width >= calc(768/16 *1em))"
+                srcset="/images/homepage/family-gathering-tablet@2x.jpg"
+                width="1146"
+                height="720" />
+              <img
+                src="/images/homepage/family-gathering-mobile@2x.jpg"
+                alt="Group of people eating a meal"
+                width="652"
+                height="800"
+                class="tab-image shadow" />
+            </picture>
+            <div class="text-content">
+              <h3>Family Gathering</h3>
+              <p>
+                We love catering for entire families. So please bring everyone
+                along for a special meal with your loved ones. We'll provide a
+                memorable experience for all.
+              </p>
+              <a href="/booking.html" class="button dark">Book a Table</a>
+            </div>
+          </div>
+        </div>
+
+        <div
+          id="panel-2"
+          role="tabpanel"
+          tabindex="0"
+          aria-labelledby="tab-2"
+          hidden
+          class="tabpanel">
+          <div class="tab-content">
+            <picture>
+              <source
+                media="(width >= calc(1024/16 *1em))"
+                srcset="/images/homepage/special-events-desktop@2x.jpg"
+                width="1080"
+                height="1200" />
+              <source
+                media="(width >= calc(768/16 *1em))"
+                srcset="/images/homepage/special-events-tablet@2x.jpg"
+                width="1146"
+                height="720" />
+              <img
+                src="/images/homepage/special-events-mobile@2x.jpg"
+                alt="Group of people drinking"
+                width="652"
+                height="800"
+                class="tab-image shadow" />
+            </picture>
+            <div class="text-content">
+              <h3>Special Events</h3>
+              <p>
+                Whether it's a romantic dinner or special date you're
+                celebrating with others we'll look after you. We'll be sure to
+                mark your special date with an unforgettable meal.
+              </p>
+              <a href="/booking.html" class="button dark">Book a Table</a>
+            </div>
+          </div>
+        </div>
+
+        <div
+          id="panel-3"
+          role="tabpanel"
+          tabindex="0"
+          aria-labelledby="tab-3"
+          hidden
+          class="tabpanel">
+          <div class="tab-content">
+            <picture>
+              <source
+                media="(width >= calc(1024/16 *1em))"
+                srcset="/images/homepage/social-events-desktop@2x.jpg"
+                width="1080"
+                height="1200" />
+              <source
+                media="(width >= calc(768/16 *1em))"
+                srcset="/images/homepage/social-events-tablet@2x.jpg"
+                width="1146"
+                height="720" />
+              <img
+                src="/images/homepage/social-events-mobile@2x.jpg"
+                alt=""
+                width="652"
+                height="800"
+                class="tab-image shadow" />
+            </picture>
+            <div class="text-content">
+              <h3>Social Events</h3>
+              <p>
+                Are you looking to have a larger social event? No problem. We're
+                more than happy to cater for big parties. We'll work with you to
+                make your event a hit with everyone.
+              </p>
+              <a href="/booking.html" class="button dark">Book a Table</a>
+            </div>
+          </div>
+        </div>
+
+        <img
+          src="/assets/patterns/pattern-lines.svg"
+          alt=""
+          width="160"
+          height="76"
+          class="lines hidden-on-mobile" />
+      </section>
+
+      <section class="wrapper cta">
+        <picture class="cta-picture full-width">
+          <source
+            media="(width >= calc(1024/16 *1em))"
+            srcset="/images/homepage/ready-bg-desktop@2x.jpg"
+            width="2880"
+            height="480" />
+          <source
+            media="(width >= calc(768/16 *1em))"
+            srcset="/images/homepage/ready-bg-tablet@2x.jpg"
+            width="1536"
+            height="544" />
+          <img
+            src="/images/homepage/ready-bg-mobile@2x.jpg"
+            alt=""
+            width="750"
+            height="656"
+            class="cta-image" />
+        </picture>
+
+        <div class="text-content">
+          <h2>Ready to make a reservation?</h2>
+
+          <a href="/booking.html" class="button">Book a Table</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="wrapper footer">
+      <a href="/">
+        <img
+          src="/public/logo.svg"
+          alt="Homepage - Dine"
+          width="103"
+          height="40"
+          class="logo" />
+      </a>
+
+      <div class="text-content">
+        <address class="location">
+          <p>Çetinyürek sk. No:42</p>
+          <p>Kadıköy, Istanbul</p>
+          <a href="tel:+902165553344">+90 216 555 33 44</a>
+        </address>
+
+        <time class="times">
+          <p>Open Times</p>
+          <p>Mon - Fri: 09 am - 10pm</p>
+          <p>Sat - Sun: 10 am - 11pm</p>
+        </time>
+      </div>
+
+      <div class="copyright">
+        Copyright
+        <span id="date"></span>
+        © All right reserved. Powered by
+        <a href="https://www.burakbilgili.co.uk/" target="_blank">
+          Burak Bilgili
+        </a>
+      </div>
+    </footer>
+  </body>
+</html>
